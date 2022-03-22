@@ -8,6 +8,18 @@
     <title>Document</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{{route('home')}}">Home</a>
+            <div class="navbar-nav">
+              
+              <a class="nav-link" href="{{route('comics.index')}}">Comics</a>
+              <a class="nav-link" href="{{route('comics.create')}}">Aggiungi un nuovo fumetto</a>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
     @yield('content')
     
     <script src="{{asset('js/app.js')}}"></script>
