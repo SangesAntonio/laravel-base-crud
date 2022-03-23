@@ -1,6 +1,9 @@
 @extends('layout/main')
 
 @section('content')
-<h1>Non ci sono comics</h1>
+<div class="container text-center pt-5">
+
+    <h1>Non ci sono fumetti</h1>
+</div>
 
 @endsection
