@@ -10,6 +10,11 @@
       <a href="{{route('comics.show', $comic->id)}}" class="btn btn-primary">Go to the comic book</a>
     </div>
     <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-info">Modifica</a>
+    <form action="{{route('comics.destroy', $comic->id)}}" method="post" >
+      @method('delete')
+      @csrf
+      <button type="submit" class="btn btn-danger">cancella</button>
+    </form>
   </div>
 
   @endforeach
