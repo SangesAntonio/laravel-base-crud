@@ -9,6 +9,7 @@
       <p class="card-text">{{$comic['description']}}</p>
       <a href="{{route('comics.show', $comic->id)}}" class="btn btn-primary">Go to the comic book</a>
     </div>
+    <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-info">Modifica</a>
   </div>
 
   @endforeach
